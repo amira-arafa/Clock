@@ -1,0 +1,62 @@
+.bg
+{
+	background-color: #ee5a5a;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+    align-items: center;
+
+}
+.clock
+{
+	background-color: #22eaca;
+	border: 5px solid white;
+	border-radius: 50%;
+	width:170px;
+	height:170px;
+	margin: 0 auto;
+}
+.tall , .small , .smaller{
+	transform-origin: 100% 100%;
+	animation-timing-function: steps(60,end);
+	animation-iteration-count: infinite;
+	animation-name: tall;
+
+}
+.tall
+{
+	width: 1px;
+	height: 80px;
+	background-color: white;
+	position: relative;
+    top: 11px;
+	left: 83px;
+	animation-duration: 60s;
+
+}
+.small
+{
+	width: 3px;
+	height: 60px;
+	background-color: white;
+	position: relative;
+    bottom:49px;
+	left: 83px;
+	animation-duration: 3600s;
+}
+.smaller{
+	width: 5px;
+	height: 40px;
+	background-color: white;
+	position: relative;
+    bottom:89px;
+	left: 83px;
+	animation-duration: 43200s;
+
+}
+@keyframes tall {
+	to{transform:rotate(360deg);
+	transform-origin: bottom;
+	}
+
+}
